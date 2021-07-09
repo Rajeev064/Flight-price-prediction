@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gentium Basic', serif;
+
+}
+
+.bg{
+    width: 100%;
+    height: 100vh;
+    background-image: url("sky.jpeg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(https://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1511281122/flight-landing-INBNDCHECK1117.jpg?itok=rlElho3R);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.bg h1 {
+    font-size:40px;
+    padding: 20px;
+    margin-top: 10px;
+    text-align:center;
+    z-index: 3;
+    opacity: 0.7;
+    color: black;
+    
+  
+  }
+
+
+
+/* FORM CSS */
+
+.content{
+    position: absolute;
+    left:10%;
+    top: 50px;
+    width: 30%;
+    height: 70%;
+    background-color:rgb(240, 248, 255, 0.4);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+h2{
+    margin-top: 10px;
+    text-align: center;
+    color: #00008B;
+}
+
+
+.content .form{
+    position: relative;
+    left: 10%;
+    top: 10%;
+    width:100%;
+}
+
+.content{
+    top: -400px;
+    animation: drop 1.5s ease forwards;
+
+}
+
+@keyframes drop{
+    0%{ opacity: 0;}
+    70%{ transform: translateY(600px)}
+    100%{ transform: translateY(500px); opacity: 1;}
+}
+
+.formname{
+    width:50%;
+    position: relative;
+    height: 50px;
+    margin-bottom:40px;
+    overflow: hidden;
+
+}
+
+.formname input{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    border: none;
+    background: none;
+    outline:none;
+}
+
+.formname label{
+    position: absolute;
+    bottom: 0px;
+    left:0%;
+    width:100%;
+    height:100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+.form label::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #00008B;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+.content-name{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.5s ease;
+}
+
+.formname input:focus + .label-name .content-name ,
+.formname input:valid + .label-name .content-name{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color:  #00008B;
+}
+
+.formname input:focus + .label-name::after,
+.formname input:valid + .label-name::after{
+    transform: translateX(0%);
+
+}
+
+
+.btn{
+    position: relative;
+    display: block;
+    width: 70%;
+    color:black;
+    font-size: 14px;
+    font-family:"sans-serif";
+    text-decoration: none;
+    text-align: center;
+    margin: 30px 0;
+    border: 2px solid #00008B;
+    padding: 14px 50px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.btn::before{
+    background: #00008B;
+    content: "";
+    width:100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+
+.btn1::before{
+    width: 0;
+    height: 100%;
+}
+
+.btn1:hover::before{
+    width:100%;
+}
+
+#back{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 80px;
+}
+
+
+
+/*CLOUD ANIMATION*/
+
+/* .clouds img{
+    width: 50px;
+    animation: cloud 7s linear infinite;
+    opacity: 0.5;
+}
+
+.clouds{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom:-100px;
+}
+
+@keyframes cloud{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        
+        opacity: 0.5;
+    }
+    70%{
+        
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+
+}
+
+.clouds img:nth-child(1)
+{
+    animation-delay: 2s;
+}
+.clouds img:nth-child(2)
+{
+    animation-delay: 1s;
+}
+.clouds img:nth-child(3)
+{
+    animation-delay: 3s;
+}
+.clouds img:nth-child(4)
+{
+    animation-delay: 4.5s;
+}
+.clouds img:nth-child(5)
+{
+    animation-delay: 3s;
+}
+.clouds img:nth-child(6)
+{
+    animation-delay: 6s;
+}
+.clouds img:nth-child(7)
+{
+    animation-delay: 7s;
+} */
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+         <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@1,700&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-grid.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">s
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <div class="loader-wrapper">
+        <div id="fountainG">
+            <div id="fountainG_1" class="fountainG"></div>
+            <div id="fountainG_2" class="fountainG"></div>
+            <div id="fountainG_3" class="fountainG"></div>
+            <div id="fountainG_4" class="fountainG"></div>
+            <div id="fountainG_5" class="fountainG"></div>
+            <div id="fountainG_6" class="fountainG"></div>
+            <div id="fountainG_7" class="fountainG"></div>
+            <div id="fountainG_8" class="fountainG"></div>
+        </div>
+       </div>
+       <div class="sidenav">
+        <center>
+            <a href="#"><i class="fa fa-send" style="font-size:50px; color:white; border-bottom: 1px solid white; padding:10px;"></i></a>
+            <a href="#"><i class="fa fa-skype" style="font-size: 60px; color:white; border-bottom: 1px solid white; padding:10px;"></i></a>
+            <a href="#"><i class="fa fa-facebook" style="font-size:60px; color:white; border-bottom: 1px solid white; padding:10px;"></i></a>
+        </center>
+    </div>
+ <div class="section">
+    
+     <div class="row" style="z-index: 1">
+        <div  class="offset-md-2 col-6 main">
+            <div class="row">
+                <div class="col-12 header" style="z-index: 2;">
+                    <h1>Flight Price Prediction</h1>
+                </div>
+                <div class="col-12 description"> 
+                    <h3>
+                   Flight ticket prices can be something hard to guess, today we might see a price, check out the price of the same flight tomorrow, it will be a different story.We are gonna prove that given the right data anything can be predicted. Here you will be provided with prices of flight tickets for various airlines throughout the year and between various cities.
+                    </h3>
+                </div>
+            
+            </div>
+            <div class="link">
+                <a href="/predict" class="link">Start Prediction</a>
+            </div>
+            
+    </div>
+     </div>
+
+    <div class="video-container">
+        <div class="color-overlay"></div>
+        <video autoplay loop muted style="width: 100%">
+            <source src="static\images\video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</div>
+       
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script>
+         $(window).on("load",function(){
+             $(".loader-wrapper").fadeOut("slow");
+         });
+     </script>
+</body>
+</html>

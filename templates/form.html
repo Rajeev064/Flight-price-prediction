@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Fare</title>
+    <link rel="stylesheet" href="static/css/style2.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg">
+        <h1>Flight Price Prediction</h1>
+
+        <div class="content">
+            <h2>Enter Details</h2>
+            <div class="form">
+                <form action="/predict">
+                <div class="formname">
+                    <input type="text" id="airline" name ="flightname" required>
+                    <label for="flightname" class="label-name">
+                        <span class="content-name">Airline</span>
+                    </label>
+                </div>
+                <div class="formname">
+                    <input type="date" id="Dep_date" name ="flightname" required>
+                    <label for="flightname" class="label-name">
+                        <span class="content-name">Date of Departure</span>
+                    </label>
+                </div>
+                <div class="formname">
+                    <h5>Source</h5>
+                            <select name="Source" id="Source" required="required">
+                                <option value="Delhi">Delhi</option>
+                                <option value="Kolkata">Kolkata</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Chennai">Chennai</option>
+                            </select>
+                </div>
+                <div class="formname">
+                    <h5>Departure</h5>
+                    <select name="Destination" id="Destination" required="required">
+                        <option value="Cochin">Cochin</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="New Delhi">New Delhi</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Kolkata">Kolkata</option>
+                    </select>
+                </div>
+                <div class="formname">
+                    <input type="time" id="Dep_time" name ="flightname" required>
+                    <label for="flightname" class="label-name">
+                        <span class="content-name">Departure Time</span>
+                    </label>
+                </div>
+                <div class="formname">
+                    <input type="time" id="Arrival_Time" name ="flightname" required>
+                    <label for="flightname" class="label-name">
+                        <span class="content-name">Arrival Time</span>
+                    </label>
+                </div>
+                <div class="formname">
+                    <h5 class="card-title">Stopage</h5>
+                            <!-- Total Stops -->
+                            <select name="stops" required="required" style="max-width:90%;">
+                                <option value="0">Non-Stop</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                </div>
+                      
+            </div>
+            <br>
+            <input type="submit" value="Submit" class="btn btn-secondary">
+        </form>
+        <br>
+        <h3>{{ prediction_text }}</h3>
+         </div>
+        <div class="back button">
+            <a href="/"><img src="static\images\back.jpg" alt="Back Button" id="back"/></a>
+        </div>
+
+        <!-- <div class="clouds">
+            <img src="cloud.png">
+            <img src="cloud.png">
+            <img src="cloud.png">
+            <img src="cloud.png">
+            <img src="cloud.png">
+            <img src="cloud.png">
+            <img src="cloud.png"> 
+        </div> -->
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,18 @@
+body {
+    background-image:  url(https://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1511281122/flight-landing-INBNDCHECK1117.jpg?itok=rlElho3R);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #333333;
+}
+
+a {
+    color: #f1f9f9;
+}
+
+a:hover {
+    color: #f0f0f0;
+  }
